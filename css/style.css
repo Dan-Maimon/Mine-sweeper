@@ -1,0 +1,60 @@
+body{
+    background-color: rgba(76, 175, 80, 0.471);
+    text-align: center;
+}
+
+/* .board-container{
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    background-color;
+    margin: auto;
+    border-collapse: collapse;
+} */
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+button.rest{
+    font-size: 30px;
+    text-align: center;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button.level{
+    /* margin: auto; */
+    margin: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.mines{
+    color: darkred;
+    font-size: 40px;
+    /* background-color: black; */
+    /* border-color: black; */
+}
+
+.board{
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    height: 406px;
+    width: 406px;
+}
+
+.cell{
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 1em;
+    /* font-size: 100%; */
+    cursor: pointer;
+}
