@@ -5,7 +5,7 @@ const NORMAL = '😀';
 const LOSE = '🤯'
 const WIN = '😎'
 const EMPTY = ' ';
-const MINENUM = [' ', '1', '2', '3', '4', '5', '6', '7', '8'];
+const MINENUM = [' ', '1', '2', '3', '4', '5', '6', '7', '8']; // why you need this array???
 
 var gBoard;
 var gLevel = {
@@ -20,7 +20,7 @@ var gGame = {
 }
 var gStartTime;
 var gPlayTime;
-var gNumCellToShow;
+var gNumCellToShow; // not a good name
 
 
 function init() {
@@ -33,7 +33,7 @@ function init() {
 
 function setLevel(lvl) {
     var strHTML = lvl.innerHTML
-    if (strHTML === 'Beginne') {
+    if (strHTML === 'Beginner') {
         gLevel.size = 4;
         gLevel.mine = 2;
     }
@@ -49,7 +49,7 @@ function setLevel(lvl) {
 }
 
 
-function gameOver(status) {
+function gameOver(status) { // status should be boolean, you shoud not use an emoji to determine what is your game status
     gGame.isOn = false;
     clearInterval(gPlayTime);
     var strHTML = document.querySelector('.rest')
@@ -72,7 +72,7 @@ function restGame() {
     var elTimer = document.querySelector('.timer');
     var strHTML = document.querySelector('.rest');
     strHTML.innerHTML = NORMAL;
-    elTimer.innerHTML = 'Timer: ';
-    init();
+    elTimer.innerHTML = 'Timer: 0.000';
+    init(); // using init and re resting some vars
 }
 

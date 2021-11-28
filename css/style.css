@@ -3,24 +3,20 @@ body{
     text-align: center;
 }
 
-/* .board-container{
-    text-align: center;
-    height: 300px;
-    width: 300px;
-    background-color;
-    margin: auto;
-    border-collapse: collapse;
-} */
-
-h1{
-    text-align: center;
+.timer{
+    color: red;
+    background-color: black;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: inline-block;
 }
-
 h2{
     text-align: center;
 }
 
 button.rest{
+    margin-top: 10px;
     font-size: 30px;
     text-align: center;
     border-radius: 7px;
@@ -28,22 +24,20 @@ button.rest{
 }
 
 button.level{
-    /* margin: auto; */
     margin: 5px;
     margin-top: 20px;
     cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .mines{
     color: darkred;
     font-size: 40px;
-    /* background-color: black; */
-    /* border-color: black; */
 }
 
 .board{
     margin: auto;
-    margin-top: 20px;
     text-align: center;
     height: 406px;
     width: 406px;
@@ -55,6 +49,12 @@ button.level{
     height: 30px;
     text-align: center;
     font-size: 1em;
-    /* font-size: 100%; */
     cursor: pointer;
+}
+
+.safe{
+    margin-top: 25px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
 }

@@ -10,18 +10,18 @@
 </head>
 
 <body onload="init()" oncontextmenu="javascript:;return false;">
-    <h1>Let's play</h1>
-    <h2 class="timer">Timer: </h2>
+    <div class="timer">Timer: 0.000</div>
     <div class="features">
         <button class="rest" onclick="restGame()">😀</button>
     </div>
-    <button class="level" onclick="setLevel(this)">Beginne</button>
+    <button class="level" onclick="setLevel(this)">Beginner</button>
     <button class="level" onclick="setLevel(this)">Medium</button>
     <button class="level" onclick="setLevel(this)">Expert</button>
     <div class="mines"></div>
     <div class="board-container">
         <table class="board"></table>
     </div>
+    <button class="safe" onclick="safeClick()">Safe Click</button>
     <script src="js/cell.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
